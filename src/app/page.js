@@ -10,7 +10,9 @@ export default function Home() {
       <HeroSection />
 
       {/* The original scroll-based animation */}
-      <CosmicJourney />
+      <section id="cosmic-journey">
+        <CosmicJourney />
+      </section>
     </main>
   );
 }

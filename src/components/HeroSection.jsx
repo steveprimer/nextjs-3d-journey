@@ -4,6 +4,7 @@
 
 import { Canvas } from "@react-three/fiber";
 import ThreeDModel from "./ThreeDModel";
+import { ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -22,6 +23,16 @@ export default function HeroSection() {
           An interactive 3D experience.
         </p>
       </div>
+
+      <a
+        href="#cosmic-journey"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer"
+        aria-label="Scroll down"
+      >
+        <div className="w-10 h-16 border-2 border-white rounded-full flex items-center justify-center">
+          <ChevronDown size={32} className="text-white animate-bounce" />
+        </div>
+      </a>
     </div>
   );
 }
